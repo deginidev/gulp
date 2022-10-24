@@ -1,0 +1,35 @@
+.header__burger {
+  display: none;
+  width: 30px;
+  height: 18px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+  & span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $whiteColor;
+    transition: all 0.2s;
+  }
+  & span:first-child {
+    top: 0;
+  }
+  & span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  &.active span {
+    transform: scale(0);
+  }
+  &.active span:first-child {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  &.active span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
