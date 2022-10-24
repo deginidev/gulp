@@ -1,0 +1,12 @@
+@use "sass:math";
+
+// @import "config/fonts";
+@import "config/functions";
+@import "config/mixins";
+@import "config/vars";
+@import "config/reset";
+@import "config/scrollbar";
+@import "config/base";
+
+@import "layout/header";
+@import "layout/footer";
